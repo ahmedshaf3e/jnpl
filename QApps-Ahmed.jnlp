@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- JNLP File to test webstart with Forms Application -->  
+<jnlp spec="1.8+" codebase="http://62.150.33.21:80/forms/java">  
+<information>  
+<title>Test Form (Dev)</title>  
+<vendor>Oracle Corporation</vendor>  
+<description>Test Form (Dev) in WebStart</description>  
+</information>  
+<security>  
+<all-permissions/>  
+</security>  
+<resources>  
+<j2se version="1.8+"/>  
+<jar href="frmall.jar"/>   
+</resources>  
+<applet-desc name="Test Form (Dev)" main-class="oracle.forms.engine.Main" width="1" height="1">  
+    <param name="height" value="750" />  
+    <param name="width" value="1040" />  
+    <param name="serverURL" value="/forms/lservlet?ifcfs=/forms/frmservlet?ifsessid=WLS_FORMS.formsapp.999&#38;acceptLanguage=en-US"/>  
+    <param name="serverArgs" value="/opt/Oracle/Middleware/Oracle_FRHome1/forms/QBILL/MAIN_menu.fmx"/>
+    <param name="lookAndFeel" value="oracle"/>
+    <param name="colorScheme" value="swan"/>
+	<param name="WebUtilArchive" value="frmwebutil.jar"/>	
+    <param name="logo" value="no"/>
+</applet-desc>  
+</jnlp>
